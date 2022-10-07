@@ -1,26 +1,24 @@
 import React from 'react';
-import '../css/NavBar.css'
-import CartWidget from './CartWidget'
+import { NavLink } from 'react-router-dom';
+import '../css/NavBar.css';
+import CartWidget from './CartWidget';
 
 function NavBar() {
   return (
     <div className="navbar">
       <ul>
-        <NavBarItem titulo="Inicio" vinculo="https://google.com" />
-        <NavBarItem titulo="Productos" />
-        <NavBarItem titulo="Acerca de" />
-        <NavBarItem titulo="Ayuda" vinculo="https://www.google.com/search?q=help" />
+        <li className="navbar-item">
+          <NavLink className="navbar-link" to={"/"}>Home</NavLink>
+        </li>
+        <li className="navbar-item">
+          <NavLink className="navbar-link" to={"/category/laptops"}>Laptops</NavLink>
+        </li>
+        <li className="navbar-item">
+          <NavLink className="navbar-link" to={"/category/tablets"}>Tablets</NavLink>
+        </li>
       </ul>
       <CartWidget />
     </div>
-  )
-}
-
-function NavBarItem({vinculo = "#", target = "_blank", titulo}) {
-  return (
-    <li className="navbar-item">
-      <a className="navbar-link" href={vinculo} target={target}>{titulo}</a>
-    </li>
   )
 }
 

@@ -1,4 +1,6 @@
 .itemListContainer {
     display: flex;
-    padding: 1rem 0 0 5rem;
+    padding: 2rem 0 0 0;
+    justify-content: center;
+    flex-wrap: wrap;
 }

@@ -1,0 +1,33 @@
+.itemCard {
+    width: 15rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gray;
+    border-radius: 2rem;
+    margin: 1rem 1rem;
+    padding: 1rem 0;
+}
+
+.itemCard img {
+    display: block;
+    max-height: 14rem;
+    max-width: 15rem;
+    height: auto;
+    width: auto;
+}
+
+.itemCard h2 {
+    text-align: center;
+}
+
+.itemCard p {
+    text-align: center;
+}
+
+.boton-link {
+    text-decoration: none;
+    color: black;
+}

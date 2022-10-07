@@ -1,0 +1,74 @@
+{
+    "laptops": [
+        {
+            "id": 1,
+            "nombre": "Lenovo Yoga 7i",
+            "precio": 280999,
+            "url": "https://www.lenovo.com/medias/88ygc701456-Gallery.png?context=bWFzdGVyfHJvb3R8MzE1NjA2fGltYWdlL3BuZ3xoM2UvaDI3LzE0MDYxOTE4NDg2NTU4LnBuZ3wyMTBlMjFhODQyNmQyOGY5MDRmMzdlOGM1NjE3NGNkMWUwMzljYjQ5NDU5MjAyNDc3ZTE4YjlhMmZkZTc0Yjk2",
+            "stock": 4,
+            "descripcion": [
+                "Procesadores Premier Intel® Core ™ de 11era generación",
+                "Pantalla FHD de 14 pulgadas con gráficos Intel® Iris® Xe y cámara HD de 720p",
+                "Combinación perfecta de la plataforma Intel® Evo™ en cuanto a capacidad de respuesta, batería de larga duración y efectos visuales asombrosos",
+                "Las características de seguridad adicionales incluyen tapa física de la cámara web y el lector de huellas digitales"
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Lenovo Legion 5i",
+            "precio": 230999,
+            "url": "https://www.lenovo.com/medias/lenovo-laptop-legion-5-15-intel-series-gallery-1.png?context=bWFzdGVyfHJvb3R8NDA0NDIwfGltYWdlL3BuZ3xoNWYvaDYwLzE0MzMyNjk1NjA5Mzc0LnBuZ3xiNmJkZjljMzk0MDU0NTEzYTExZDdmYjc2MjhiMThiMDlkOGFmMjZjZjdhZGJmYTNlMWQ4NjQ3OGQ2Njk3MzBh",
+            "stock": 0,
+            "descripcion": [
+                "Desarrollada por procesadores hasta Intel® Core™ i7 H de 10ma generación",
+                "Con hasta Windows 10 Home",
+                "Gráficos hasta NVIDIA® GeForce RTX™",
+                "Diseño “limpio” y minimalista por el que Lenovo es conocido",
+                "Pantalla de 15.6” FHD IPS con hasta 500 nits, 100% sRGB gamut y refresh rate de hasta 240Hz",
+                "Algunos puertos y características pueden variar según el modelo"
+            ]
+        },
+        {
+            "id": 3,
+            "nombre": "Lenovo ThinkBook 16p 2da Gen",
+            "precio": 525999.00,
+            "url": "https://www.lenovo.com/medias/?context=bWFzdGVyfHJvb3R8MjY4Njg4fGltYWdlL3BuZ3xoZmEvaGQyLzExNjE0NjM3MDY0MjIyLnBuZ3w1NzNhM2EzNjI4ZWY2ZjM3MDY3YjRlOGFhNmI0MzU3MzYyYWU2ODJhZDBhNmY2MjU4OTQzMTMxMWU1NmJkY2Q5",
+            "stock": 20,
+            "descripcion": [
+                "Potente procesamiento hasta AMD Ryzen™ 9",
+                "Tarjeta gráfica NVIDIA® GeForce RTX™ para realizar las tareas creativas más exigentes",
+                "Funciones sólidas de seguridad para mantenerte siempre protegido",
+                "Pantalla de 16” WQXGA y 400 nits",
+                "Diseñada para simplificar tus tareas diarias en la empresa"
+            ]
+        }
+    ],
+    "tablets": [
+        {
+            "id": 1,
+            "nombre": "Yoga Tab 11",
+            "precio": 99999,
+            "url": "https://www.lenovo.com/medias/?context=bWFzdGVyfHJvb3R8NTQ2NDF8aW1hZ2UvcG5nfGhhYS9oMGIvMTE2NzkwMzQxNzk2MTQucG5nfGUwMGFhOTBiMGZlZGM4ZDA3YmI5NWQ0Y2JjYjkxYzkyMGQ5ZDE2NjczMjllZjQ5MTdkNmU0ZmNjNmY4MTMzZTI",
+            "stock": 10,
+            "descripcion": [
+                "Pantalla de 11” 2K, con Dolby Vision™ y luz azul baja con certificación TÜV",
+                "Cuatro altavoces JBL con Dolby Atmos®",
+                "Compatible con Lenovo Precision Pen 2 opcional (se vende por separado)",
+                "Tablet práctica para que disfrute toda la familia"
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Yoga Tab 13",
+            "precio": 163999,
+            "url": "https://www.lenovo.com/medias/?context=bWFzdGVyfHJvb3R8NTcwNjR8aW1hZ2UvcG5nfGhjMC9oNjAvMTE2Nzk5NzY4NDk0MzgucG5nfDNmZTFjOGUzN2FkNzAzNTFmOTZiOTE2NDFjYWEzZTRhODlhYzA4NzU3ZDQ0YWI4YTcxYTdkYTMxNzE0YWEzNGE",
+            "stock": 14,
+            "descripcion": [
+                "Intensifica tu experiencia multimedia",
+                "Resolución de pantalla 2K con Dolby Vision™",
+                "Sonido Dolby Atmos® envolvente a través de cuatro altavoces JBL",
+                "Perfecta para videojuegos con procesamiento Qualcomm Adreno 650"
+            ]
+        }
+    ]
+}

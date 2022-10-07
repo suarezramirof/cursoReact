@@ -1,0 +1,56 @@
+.item-detail {
+  display: flex;
+  flex-direction: column;
+  max-width: 80rem;
+  margin: auto;
+  align-items: center;
+}
+
+.img-desc-detail-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.descripcion-detail-item {
+  max-width: 20rem;
+  margin-left: 10rem;
+}
+
+.descripcion-detail-item li {
+  list-style-type: none;
+}
+
+.imagen-detail-item {
+  max-width: 35rem;
+  max-height: 35rem;
+  width: auto;
+  height: auto;
+}
+
+.footer-detail-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 4rem;
+}
+
+.precio-detail-item {
+  font-style: italic;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .item-detail {
+    max-width: 100vw;
+  }
+
+  .img-desc-detail-item {
+    flex-direction: column-reverse;
+  }
+  .descripcion-detail-item {
+    max-width: 90%;
+    margin: 0 3rem;
+  }
+}
