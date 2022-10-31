@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { CartContext } from "../context/CartContext";
+import { useNavigate } from "react-router-dom";
 
 const Brief = ({total}) => {
   const { cart } = useContext(CartContext);
@@ -18,7 +19,7 @@ const Brief = ({total}) => {
   const changeHandlerMail = (ev) => {
     setMail(ev.target.value);
   }
-
+  const navigate = useNavigate();
   const confirmarCompra = (ev) => {
     ev.preventDefault();
     const today = new Date(Date.now());
@@ -33,6 +34,7 @@ const Brief = ({total}) => {
       total: total
     }).then((snapshot) => {
       alert(`Su número de orden es ${snapshot.id}`);
+      navigate("/")
     });
   };
   return (
