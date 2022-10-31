@@ -4,3 +4,14 @@
   min-height: 100vh;
   font-family: 'Nunito Sans', sans-serif;
 }
+
+.titulo-home {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.titulo-seccion {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 1rem;
+}

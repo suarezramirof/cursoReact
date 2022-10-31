@@ -1,36 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../css/ItemListContainer.css";
 import { useParams } from "react-router-dom";
 import ItemCard from "./ItemCard";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  query,
+  where,
+} from "firebase/firestore";
 
-const ItemListContainer = ({ productos }) => {
-  const seccion = useParams().id;
-  if (seccion) {
-    productos = productos[seccion];
+const ItemListContainer = () => {
+  const [productos, setProductos] = useState([]);
+  const category = useParams().idCat;
+  const id = window.location.pathname;
+  let location = false;
+  if (id.includes("productos")) {
+    location = true;
   }
-  if (typeof productos === "object" && Object.keys(productos).length > 0) {
-    if (productos[0]) {
-      return (
-        <div className="itemListContainer">
-          {productos.map((e) => (
-            <ItemCard key={e["nombre"]} item={e} />
-          ))}
-        </div>
-      );
-    } else {
-      return (
-        <div className="itemListContainer">
-          {Object.keys(productos).map((categoria) =>
-            productos[categoria].map((producto) => (
-              <ItemCard key={producto["nombre"]} item={producto} />
-            ))
-          )}
-        </div>
-      );
-    }
-  } else {
-    return <div>Loading...</div>;
-  }
+
+  useEffect(() => {
+    const db = getFirestore();
+    const itemsCollection = collection(db, "items");
+    const q = category
+      ? query(itemsCollection, where("category", "==", category))
+      : itemsCollection;
+    getDocs(q).then((snapshot) => {
+      setProductos(snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+    });
+  }, [category]);
+
+  return (
+    <>
+      <h1 className="titulo-seccion">
+        {location ? (category ? category : "Nuestros productos") : ""}
+      </h1>
+      <div className="itemListContainer">
+        {productos.map((item) => (
+          <ItemCard key={item.id} item={item} />
+        ))}
+      </div>
+    </>
+  );
 };
 
 export default ItemListContainer;

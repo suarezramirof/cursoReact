@@ -1,9 +1,24 @@
 .imgcarrito {
-    width: 1.75rem;
-    height: 1.75rem;
-    margin: 0 1rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin: 0 1rem;
 }
 
 .imgcarrito:hover {
-    transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.contador {
+  display: inline-block;
+  position: relative;
+  top: -0.75rem;
+  left: -2rem;
+  color: white;
+  pointer-events: none;
+}
+
+.carrito-contador {
+  font-weight: 900;
+  font-size: 0.8rem;
+  width: 5rem;
 }

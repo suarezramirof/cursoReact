@@ -25,6 +25,10 @@
     font-weight: 600;
 }
 
+.active {
+    color: black;
+}
+
 .navbar-link:hover {
     color: black;
 }
@@ -33,3 +37,14 @@
     list-style-type: none;
 }
 
+.accordeon-child-hidden {
+    display: none;
+}
+
+.accordeon-child-visible {
+    display: list-item;
+}
+
+NavLink .active {
+    color: red;
+}

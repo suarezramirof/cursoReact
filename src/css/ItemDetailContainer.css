@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   max-width: 80rem;
-  margin: auto;
+  margin: 2rem auto auto auto;
   align-items: center;
 }
 
@@ -39,6 +39,49 @@
 .precio-detail-item {
   font-style: italic;
   font-weight: 600;
+}
+
+.item-detail-controls {
+  display: flex;
+}
+
+.item-detail-controls input {
+  width: 3rem;
+  text-align: center;
+  border: none;
+}
+
+.item-detail-controls button {
+  min-width: 1rem;
+  min-height: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.btn-cant {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.btn-agregar {
+  padding: 0 0.5rem;
+}
+
+.item-detail-controls button:hover {
+  background-color: lightgrey;
+}
+
+.item-detail-controls-hidden {
+  display: none;
+}
+
+.separador-detail {
+  width: 20rem;
+  min-height: 1px;
+  background-color: lightgray;
+  margin: 1rem 0;
 }
 
 @media (max-width: 800px) {
